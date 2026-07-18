@@ -80,7 +80,25 @@ Framer often ships **separate DOM subtrees per breakpoint**, controlled by class
 - `style` attribute conventions: Framer inlines layout-critical styles (`transform`,
   `opacity`, `will-change`) — mirror what sibling nodes carry.
 
-## 8. What the extractor may have broken — don't "fix" beyond scope
+## 8. Hydration & runtime-dependent rendering — test, don't assume
+
+Extracted Framer sites usually keep the React runtime, which re-renders the page from JS data:
+
+- **DOM-only edits get reverted on load.** Text must be changed in the HTML AND every JS chunk /
+  handover blob / search index that carries a copy. Always verify in a browser after editing.
+- **New sections inserted into the React root get deleted during hydration.** Place added
+  sections outside the root (e.g. the bodyEnd snippet area) and insert them post-hydration with
+  a small placement script + MutationObserver. Anchor-chain the config so repeated placement is
+  stable (never two nodes anchored "before X" — the second anchors on the first).
+- **Fit-text svg variants (`<svg viewBox…><foreignObject class="framer-fit-text">`) are sized by
+  the runtime.** In a static clone they collapse to 0 height — use the plain-div text variant
+  (unhidden across breakpoints) and pick a font size from the DNA scale that fits the narrowest
+  breakpoint.
+- **Cross-page clones need their CSS.** Class rules live per-page; when cloning a section from
+  another page, extract and carry over every rule (including @media blocks) that mentions its
+  classes.
+
+## 9. What the extractor may have broken — don't "fix" beyond scope
 
 Extracted files sometimes carry dead scripts, unused preloads, or broken badge-removal hacks.
 Leave them unless they block the requested change; note anything load-bearing you had to touch.
