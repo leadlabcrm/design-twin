@@ -31,6 +31,11 @@ For each check, do the comparison mechanically:
   its neighbors at desktop AND mobile widths. Compare alignment edges, rhythm, type sizes
   optically. Watch the entrance animation fire. Check console for new errors.
 
+- **Diversity pass (HARD, for added sections):** name each new section's layout archetype.
+  Fail if a new section shares its archetype with an adjacent section, or if any archetype now
+  appears more times on the page than the designer's own pages ever use it. "Same skeleton,
+  different words" counts as the same archetype — check the DOM, not the copy.
+
 ## The five killer questions (answer in writing on the scorecard)
 
 1. If the designer scrolled past this section tomorrow, would anything make them stop?

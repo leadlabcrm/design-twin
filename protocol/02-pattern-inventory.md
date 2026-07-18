@@ -50,7 +50,27 @@ Write these down. During BUILD you will copy the primary source's markup skeleto
 mutate content — not write a new structure from scratch. This single habit kills 90% of
 "an AI wrote this" tells: wrong nesting depth, foreign class patterns, alien spacing.
 
-## D. Asymmetries and quirks — keep them
+## D. Compositional vocabulary — the designer's taste, made explicit
+
+The inventory so far catalogs what exists. This step extracts the *moves* behind it, so a new
+section can be a **fresh composition in the same taste** rather than a re-run of an existing
+skeleton. Write down:
+
+1. **Layout archetypes** — every distinct section skeleton in the file, named. Typical examples:
+   statement stack (label + giant words + para + CTA), card grid with hover overlay, list rows
+   with prices, big-numeral stats row, marquee of oversized words, editorial split (small label
+   column + prose), people grid, full-bleed media mask, image-card rows. Count how many
+   sections use each — this reveals the designer's defaults AND their limits.
+2. **Contrast moves** — how the designer creates drama: giant serif vs tiny sans labels,
+   cream-on-black inversion bands, dense sections vs near-empty ones, static vs moving.
+3. **Rhythm rules** — how archetypes alternate down the page (rich → statement → rich…),
+   where inversions land, how often a "loud" section is allowed.
+4. **Recombination space** — which atoms travel between archetypes (the pill CTA appears in
+   heroes and cards; the giant-word element appears in statements and marquees). New sections
+   are built by RECOMBINING these — an existing archetype filled with a different atom set, or
+   two vocabulary elements composed in a way the designer hasn't used yet but plausibly would.
+
+## E. Asymmetries and quirks — keep them
 
 Real designers are consistently *in*consistent: maybe one section's heading is 48px while the
 rule says 40, maybe one card grid uses 20px gap instead of 24. Record quirks, and do not "fix"

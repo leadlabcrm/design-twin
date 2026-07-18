@@ -3,17 +3,32 @@
 You may only start here with a completed Design DNA worksheet, Pattern Inventory, and written
 plan. Every rule below is a hard rule.
 
-## 1. Clone-first construction
+## 1. Clone atoms, compose sections — the diversity rule
 
-1. Copy the **primary clone source** section's markup verbatim (chosen in 02-C).
-2. Mutate content: text, icons, images, counts (3 cards → 4 cards by duplicating a card node).
-3. Adjust only what the change requires; every adjustment must use values from the DNA closed
-   sets and patterns from the inventory.
-4. Repeat per breakpoint variant if the file duplicates DOM per breakpoint (03-4).
+Clone-first applies at the ATOM and ARCHETYPE level, never as "duplicate a whole section and
+change the words." A page of near-identical skeletons with different copy is the #1 tell that
+a template was stamped, not designed.
 
-Composing a section from scratch is allowed **only** when no remotely comparable structure
-exists — and then every atom inside it (headings, buttons, cards, spacing stack) is still
-cloned from inventory recipes, and you flag the precedent gap in delivery notes.
+1. **Editing an existing section** → clone-in-place: keep its skeleton, mutate content only.
+2. **Adding a NEW section** → pick its layout archetype from the compositional vocabulary
+   (02-D), under these constraints:
+   - Its archetype must **differ from both adjacent sections** in the final page order.
+   - Prefer an archetype the page doesn't overuse. If the vocabulary is rich, a new section
+     should usually introduce variety, not repeat the most common skeleton.
+   - Two sections with the same skeleton and different copy = ONE archetype used twice.
+     Twice on a page is the ceiling for any archetype unless the designer's own pages exceed it.
+3. **Building the chosen archetype:** clone its skeleton from wherever it exists (any page of
+   the site — cross-page cloning is expected), then fill it with atoms from the inventory.
+   Every value still comes from the DNA closed sets; every atom from an inventory recipe.
+4. **Novel recombination** is allowed and encouraged when it stays inside the vocabulary:
+   an existing skeleton carrying a different atom set, or two vocabulary elements composed in
+   a way the designer plausibly would (e.g. the giant-word element used as a stacked index).
+   What is NOT allowed remains unchanged: foreign values, foreign class dialects, layouts with
+   no basis in the file.
+5. Repeat per breakpoint variant if the file duplicates DOM per breakpoint (03-4).
+
+Composing fully from scratch is still the last resort (no comparable archetype anywhere in the
+site) — atoms cloned, precedent gap flagged in delivery notes.
 
 ## 2. Closed sets are law
 

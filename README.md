@@ -44,8 +44,10 @@ Templates the assistant fills in while working:
 1. **Never write a line of new UI code before the Design DNA worksheet and Pattern Inventory are complete.**
 2. **Never invent** a color, font, font-size, spacing value, radius, shadow, easing curve, or
    animation duration that does not already exist in the file. Reuse exact values.
-3. **Clone structure, don't compose from imagination.** New sections start life as a copy of the
-   closest existing section's markup skeleton.
+3. **Clone atoms, compose sections.** Editing an existing section = keep its skeleton. Adding a
+   NEW section = pick a layout archetype from the designer's own vocabulary that DIFFERS from
+   the adjacent sections — never stamp the same skeleton back-to-back with different words.
+   Recombine the designer's moves the way they would; invent nothing foreign.
 4. **The review gate is mandatory** and must be passed at 100% (all hard checks green) before any
    output is shown to the user. Failures loop back to a fix pass — as many rounds as needed.
 5. **Deliver the complete working file**, never fragments with "…rest unchanged" placeholders,
