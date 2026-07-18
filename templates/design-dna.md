@@ -72,5 +72,28 @@
 - HTML comment usage (usually: none):
 - Indentation/formatting style of the file:
 
-## Quirks to preserve (02-D)
+## Quirks to preserve (02-E)
 -
+
+---
+
+# Designer Model (01 Part 2 — fill completely before any Studio work)
+
+## Decision rules (10–15, each with 2+ evidence citations)
+1. RULE: … → evidence: …, …
+2.
+
+## Tensions & resolutions
+- Information vs air → …
+- Symmetry vs asymmetry → …
+- Show all vs curate → …
+- Playful vs restrained → …
+- Type-led vs image-led → …
+
+## The nevers (8–12)
+1.
+
+## Stress test (answer from the model, cite rules)
+- Pricing table → …
+- 20-item list → …
+- Urgent announcement → …

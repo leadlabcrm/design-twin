@@ -104,3 +104,57 @@ New copy must read like the same person wrote it on the same day.
 and the "closed sets" (fonts sizes, colors, spacing, radii, shadows, easings, durations) are
 explicitly listed. These sets are the law during BUILD: if a value isn't in a set, it doesn't
 go in the file.
+
+---
+
+# Part 2 — The Designer Model (mandatory, written out)
+
+The worksheet above captures WHAT the designer chose. This part derives WHY — a working model
+of their judgment that can answer questions the site never had to answer. This is the
+difference between a copyist and a ghost-designer. **Do not skip this because the sets are
+done; the sets alone can only reproduce, never design.**
+
+## 2.1 Derive the decision rules (10–15, evidence-backed)
+
+Write explicit IF/THEN rules the designer demonstrably follows, each cited to at least two
+places in the site. Format: `RULE → evidence, evidence`. Hunt in every category:
+
+- **Hierarchy:** e.g. "One idea per section; the heading carries it, body text only supports —
+  no section has two competing focal points" → (hero, statement sections)
+- **Type:** e.g. "Display serif is reserved for emotional statements; every utilitarian label
+  is small uppercase sans" → (statement words vs PAGES/label chips)
+- **Space:** e.g. "When content shrinks, space grows — short sections keep full vertical
+  rhythm rather than tightening" → (compare section paddings vs content density)
+- **Color:** e.g. "Color never decorates; the palette is neutral and contrast does all the
+  work" / "inversion (dark band) marks a mood change, not a topic change"
+- **Imagery:** e.g. "Images are texture, not information — always cropped, masked, or dimmed
+  behind type"
+- **Motion:** e.g. "Motion only on entry and hover; nothing loops except marquees; easing is
+  always the same two curves"
+- **Copy:** e.g. "Headlines are ≤4 words and concrete; the para under them does exactly one
+  job in ≤2 sentences"
+- **Density:** e.g. "Never more than N items in a row; overflow becomes a marquee or a page"
+
+## 2.2 Name the tensions and how the designer resolves them
+
+Real taste shows in trade-offs. For each tension, state which side this designer takes,
+with evidence: More information vs more air (→ ?). Symmetry vs editorial asymmetry (→ ?).
+Show everything vs curate hard (→ ?). Playful vs restrained (→ ?). Loud type vs loud imagery
+(→ ?). When both sides appear, note WHEN each wins.
+
+## 2.3 The negative space of the taste — what this designer would never do
+
+List 8–12 concrete "nevers" implied by the site: e.g. never a colored button, never an icon
+grid, never a carousel, never centered body text over 2 lines, never two CTAs of equal weight,
+never stock-photo realism, never a drop shadow heavier than X. New work violating a "never"
+fails the gate no matter how good it looks.
+
+## 2.4 Stress-test the model before building anything
+
+Answer, in writing, from the model alone (not from any existing section):
+1. "How would this designer show a pricing table?" 
+2. "How would they handle a 20-item list?"
+3. "How would they announce something urgent?"
+If the model can't answer these three with specific, confident, evidence-consistent decisions,
+it is not finished — go back and derive more rules. When it can, you are ready to DESIGN, not
+just edit.

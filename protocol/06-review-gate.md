@@ -35,6 +35,14 @@ For each check, do the comparison mechanically:
   Fail if a new section shares its archetype with an adjacent section, or if any archetype now
   appears more times on the page than the designer's own pages ever use it. "Same skeleton,
   different words" counts as the same archetype — check the DOM, not the copy.
+- **Novelty pass (HARD, for added sections):** diff the new section's DOM skeleton against
+  EVERY existing section. If it is ≥90% identical to any one of them, it is a re-skin, not a
+  design — fail, return to the Design Studio (04 §0), and produce a real concept. Exception:
+  the user explicitly asked for "another one like X".
+- **Model-consistency pass (HARD, for added sections):** check the built section against the
+  Designer Model: every applicable decision rule honored, zero "nevers" violated, tensions
+  resolved the designer's way. Quote the specific rules checked and the evidence in the built
+  markup.
 
 ## The five killer questions (answer in writing on the scorecard)
 

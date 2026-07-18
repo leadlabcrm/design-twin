@@ -16,10 +16,18 @@ designer opened their own file and made the change themselves.
 ## How to use (for the human)
 
 1. Extract the site (e.g., via a Framer extractor) → you get an HTML file (plus maybe assets).
-2. Open a Claude session, attach or point to the HTML file.
-3. Paste the prompt from [PROMPT.md](PROMPT.md), filling in your change request.
-4. Claude reads this protocol, studies the file, builds the change, runs the review gate, and only
-   then returns the result.
+2. Fill [ONBOARDING.md](ONBOARDING.md) and gather the assets folder it describes — this is what
+   makes the output launch-ready instead of placeholder-ridden.
+3. Open a Claude session, attach or point to the HTML file + onboarding folder.
+4. Paste the prompt from [PROMPT.md](PROMPT.md), filling in your request.
+5. Claude runs the Taste Study (deriving the designer's judgment, not just their values),
+   designs anything new in the Design Studio as that designer would, builds, runs the review
+   gate, and only then returns the result. Save the Taste Study output — reuse it in every
+   later session on the same site.
+
+**The core discipline:** for NEW sections the assistant must behave like the designer taking a
+brief — three written concepts, judged by the derived Designer Model, winner built — never like
+a copy-paste worker re-skinning an existing section. The review gate rejects re-skins outright.
 
 ## Pipeline (for the assistant)
 

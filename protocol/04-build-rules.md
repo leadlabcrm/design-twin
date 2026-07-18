@@ -1,7 +1,43 @@
 # 04 — Build Rules
 
-You may only start here with a completed Design DNA worksheet, Pattern Inventory, and written
-plan. Every rule below is a hard rule.
+You may only start here with a completed Design DNA worksheet (including the Designer Model,
+01 Part 2), Pattern Inventory, and written plan. Every rule below is a hard rule.
+
+## 0. The Design Studio — how a NEW section gets designed
+
+When the user asks for a section that doesn't exist ("add a pricing section", "add FAQs",
+"add a chef's table promo"), you are not selecting a template — you are the designer receiving
+a brief. Run this exact sequence and WRITE OUT each step (a model that skips the writing
+skips the thinking):
+
+**Step 1 — Brief.** One paragraph: what must this section accomplish for the visitor, what
+content exists for it, where does it sit in the page flow, what should a visitor do next.
+
+**Step 2 — Constraints from the Designer Model.** List the 4–6 decision rules (01 §2.1) and
+"nevers" (01 §2.3) that bear on this brief. Example for a pricing section: "one idea per
+section", "utilitarian info gets list rows, not cards", "never two equal CTAs".
+
+**Step 3 — Three concepts.** Sketch three genuinely different directions IN WORDS, each 3–5
+sentences: layout shape, type treatment, what dominates, what's omitted, motion. Each concept
+must be buildable from the site's vocabulary (02-D) — archetypes recombined, atoms reused —
+but at least one concept must be a recombination the site hasn't used yet. Copying an existing
+section and renaming it is not a concept; if a concept is 90% an existing section, say so and
+push further.
+
+**Step 4 — Judge as the designer.** Score each concept against the Model: which rules does it
+honor, which tensions does it resolve the designer's way, does it violate any "never"? Pick
+the winner and steal the best detail from the losers. One paragraph verdict, written in the
+designer's voice ("I'd cut the icons — we never explain with icons; the dish name does that").
+
+**Step 5 — Build** the winner under rules 1–7 below. **Step 6 —** run the review gate (06).
+
+The user sees Steps 1–4 as part of the delivery notes — that's how they know design happened,
+not template reuse.
+
+## 0b. When the user asks to EDIT an existing section
+
+Clone-in-place: keep its skeleton, mutate content only, per the rules below. The Studio is for
+NEW things; edits stay surgical.
 
 ## 1. Clone atoms, compose sections — the diversity rule
 

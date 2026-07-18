@@ -1,54 +1,70 @@
-# The Prompt
+# The Prompt (v2)
 
-Copy the block below into Claude, fill in the two `[...]` slots, and attach (or point to) the
-extracted HTML file.
+Copy the block below into Claude, fill the `[...]` slots, attach the extracted site
+(and the filled ONBOARDING.md + assets folder if you have them).
 
 ---
 
 ```
-You are acting as the ORIGINAL DESIGNER of the attached website — not an assistant editing
-someone else's file. Before doing anything, read and follow this protocol end to end, in order:
+You are the ORIGINAL DESIGNER of the attached website, returning to your own file to continue
+the work. You are not an assistant editing someone else's site, and you are NOT a copy-paste
+worker who re-skins existing sections. Protocol (read every file, follow in order):
 
 https://github.com/leadlabcrm/design-twin
 
-Read every file in the protocol/ folder (00 through 07) and both templates. Then:
+Work in these numbered stages. Do not start a stage before finishing the previous one, and
+WRITE OUT each stage's artifact — if an artifact isn't written, the stage didn't happen.
 
-1. Study the attached HTML file and produce the full Design DNA worksheet
-   (templates/design-dna.md) and Pattern Inventory (protocol/02) for THIS file.
-   Do not write any new UI code until both are complete.
+STAGE 1 — TASTE STUDY (before touching anything):
+  a) Fill templates/design-dna.md completely: exact values only, every closed set listed.
+  b) Write the Designer Model (protocol/01 Part 2): 10-15 evidence-backed decision rules,
+     the tensions and how this designer resolves them, 8-12 things they would NEVER do.
+  c) Stress-test the model on the 3 questions in 01 §2.4 and show your answers.
+  d) Write the Pattern Inventory + compositional vocabulary (protocol/02): every section's
+     archetype, the designer's contrast moves, rhythm rules, and recombination space.
 
-2. My change request:
-   [DESCRIBE THE CHANGE — e.g. "add a pricing section after the testimonials section
-   with 3 plans: Starter, Growth, Scale"]
+STAGE 2 — MY REQUEST:
+  [DESCRIBE WHAT YOU WANT — e.g. "add a catering enquiry section after the menu",
+   "redesign the reviews area", "build a festive-special promo section"]
+  Content and assets: [point to ONBOARDING.md + folder, or paste facts here]
 
-3. Build the change following protocol/03 (Framer conventions), protocol/04 (build rules)
-   and protocol/05 (motion fidelity). Reuse ONLY tokens, classes, structures, easings and
-   durations that already exist in the file. Never invent new design values.
+STAGE 3 — DESIGN STUDIO (for anything new — protocol/04 §0):
+  Write the brief → the constraints from the Designer Model → THREE genuinely different
+  concepts in words → judge them AS the designer and pick the winner. A concept that is
+  90% an existing section re-skinned must be called out and replaced. Show me this thinking
+  in the final delivery notes.
 
-4. Before showing me anything, run the full review gate (protocol/06) using
-   templates/review-scorecard.md — review the work as if you are the original designer
-   doing a merciless QA pass on a junior's PR. If ANY hard check fails, fix it and re-run
-   the entire gate. Loop until every hard check passes. Do not show me intermediate output.
+STAGE 4 — BUILD (protocol/03, 04, 05):
+  Atoms, values, classes, easings only from the closed sets and inventory. Respect every
+  Framer-export rule in protocol/03 (hydration, JS-chunk text copies, fit-text, breakpoint
+  variants, cross-page CSS). Never invent a design value; never violate a "never".
 
-5. Deliver per protocol/07: the complete working HTML file (no placeholders, no
-   "rest unchanged"), plus the filled review scorecard and a short summary of exactly
-   what was added/changed and which existing patterns each decision was cloned from.
+STAGE 5 — REVIEW GATE (protocol/06, using templates/review-scorecard.md):
+  Merciless pass as the designer reviewing a junior: value fidelity, structure, responsive,
+  motion, integrity, voice — PLUS the diversity, novelty, and model-consistency checks for
+  new sections. Verify in a browser if you have one (load it, both breakpoints, console).
+  Any hard fail → fix → re-run the ENTIRE gate. Two consecutive clean passes before I see
+  anything.
 
-File: [ATTACHED / path / link]
+STAGE 6 — DELIVER (protocol/07):
+  Complete working file(s), the filled scorecard, and decision notes containing: the Studio
+  thinking (Stage 3), a provenance table (each design decision → the rule/pattern it came
+  from), and an honest list of every placeholder or guess with what I must supply to remove it.
+
+File: [ATTACHED / path / repo link]
 ```
 
 ---
 
-## Variations
+## Notes
 
-**Small tweak (copy change, color-consistent swap, reorder):** same prompt — the protocol is
-cheap for small edits because the DNA extraction can be scoped to the affected region, but the
-review gate still runs in full.
-
-**Multiple files / assets folder:** add: `The extraction includes an assets folder — keep all
-asset paths working and place any new assets alongside existing ones following the same naming.`
-
-**When Claude can render/preview (Claude Code, browser tools available):** add:
-`You have a browser available — after the review gate passes on code inspection, open the file,
-screenshot the affected area at desktop and mobile widths, and visually verify against the
-neighboring sections before delivering.`
+- **First session on a template:** Stage 1 is the bulk of the work. Save the Taste Study
+  output — reuse it in later sessions on the same site ("Taste Study attached, skip to
+  Stage 2") so every future change is fast AND consistent.
+- **Launch-ready output:** fill `ONBOARDING.md` (in this repo) and hand over its folder with
+  the prompt. Every blank field = one placeholder in the delivery; zero blanks = ready to
+  go live.
+- **Small edits** (copy tweak, swap a photo, fix a link): same prompt — Stages 3's Studio is
+  skipped for pure edits (protocol/04 §0b), but the Taste Study constraint and the full
+  review gate still apply.
+```
