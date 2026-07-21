@@ -55,5 +55,24 @@
 4. Entrance matches neighbors parameter-for-parameter? —
 5. Can the raw-HTML reader spot the author change? —
 
+## Parameter Matrix (protocol/06 — every row, every pass)
+| P | Parameter | ✅/❌/⚠ | Evidence (measured value / count / screenshot ref) |
+|---|-----------|--------|------------------------------------------------|
+| P1 | Typography fidelity | | |
+| P2 | Color discipline | | |
+| P3 | Spacing & rhythm | | |
+| P4 | Surface | | |
+| P5 | Motion fidelity | | |
+| P6 | Voice & copy | | |
+| P7 | Archetype: diversity / novelty / model | | |
+| P8 | Responsive integrity (375/810/1200) | | |
+| P9 | Hydration integrity (all copies + survives re-render) | | |
+| P10 | Links & wiring | | |
+| P11 | Assets | | |
+| P12 | Meta & brand sweep | | |
+| P13 | Untouched-region stability | | |
+| P14 | Optical parity vs Reference Capture | | |
+| P15 | Weight & console vs baseline | | |
+
 **Verdict:** PASS / FAIL → [if fail: list fixes, then re-run full gate]
 **Consecutive clean passes:** [n]/2

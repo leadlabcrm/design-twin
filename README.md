@@ -33,7 +33,7 @@ a copy-paste worker re-skinning an existing section. The review gate rejects re-
 
 | Step | File | What happens |
 |------|------|--------------|
-| 0 | [protocol/00-pipeline.md](protocol/00-pipeline.md) | Mandatory order of operations. Read first. |
+| 0 | [protocol/00-pipeline.md](protocol/00-pipeline.md) | Mandatory order of operations + Reference Capture of the live template. Read first. |
 | 1 | [protocol/01-design-dna.md](protocol/01-design-dna.md) | Extract the site's complete Design DNA before touching anything. |
 | 2 | [protocol/02-pattern-inventory.md](protocol/02-pattern-inventory.md) | Catalog every existing section & component and how they're built. |
 | 3 | [protocol/03-framer-conventions.md](protocol/03-framer-conventions.md) | Framer-export-specific markup rules you must preserve. |

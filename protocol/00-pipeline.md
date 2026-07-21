@@ -28,6 +28,27 @@ No step may be skipped, merged, or reordered. In particular:
 - Note the generator (Framer exports have telltale markup — see 03). Note whether styles are
   inline, in `<style>` blocks, or external. Note the asset strategy (CDN URLs vs local files).
 
+### INGEST from a live template link (Reference Capture)
+When the input is a LIVE URL (with or without an extracted copy), capture a measured baseline
+BEFORE any work — this baseline is what the checking parameters (06) compare against:
+
+1. **Open the live site in a browser.** Screenshot the top of the page at desktop and mobile
+   widths. (If below-the-fold screenshots render black — a known compositing artifact with
+   scroll-choreographed sites — verify via DOM instead: `elementFromPoint`, computed styles,
+   and glyph rects prove what actually paints.)
+2. **Measured type table:** for one element of every text tier (display, heading, body, label,
+   button), record COMPUTED font-family/size/weight/line-height/letter-spacing/transform/color
+   via `getComputedStyle` — computed values catch runtime scaling (e.g. fit-text) that static
+   markup hides.
+3. **Section map with geometry:** every section's name, archetype, rendered height at desktop
+   and mobile, and vertical gap to the next section.
+4. **Motion log:** watch the load and one full scroll. Note which elements animate, trigger
+   points, perceived durations, marquees/loops, hover states on each interactive element.
+5. **Console + network baseline:** record pre-existing errors so later verification can
+   distinguish inherited noise from regressions.
+6. If working on an extracted copy, serve it locally and confirm it renders identically to
+   the live link BEFORE editing — differences found later are otherwise unattributable.
+
 ### DESIGN DNA (protocol/01)
 Fill `templates/design-dna.md` completely, with **exact values copied from the file** —
 real hex codes, real px/rem values, real cubic-bezier strings. "Around 24px" is a protocol
