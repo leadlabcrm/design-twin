@@ -82,7 +82,7 @@ shortcut. Compare against the Reference Capture baseline (00), not against memor
 | P13 | Untouched-region stability | ✔ | Diff shows changes only where the task required them; no reformatting drift |
 | P14 | Optical parity | — | Screenshots (or DOM-geometry probes where capture fails) at 2 breakpoints: alignment edges, rhythm, type scale vs Reference Capture |
 | P15 | Weight & console | — | No new console errors vs baseline; page-weight delta reported; no new blocking scripts |
-| P16 | Wireframe conformance (when a wireframe was given) | ✔ | Built page walked against the Wireframe Read: every region present in order with all drawn elements realized or flagged; every taste-over-sketch deviation justified by a quoted Model rule (protocol/08) |
+| P16 | Wireframe conformance (when a wireframe was given) | ✔ | Built page walked against the Wireframe Read region by region: present, in order, AND matching the drawn internal layout — column structure, image presence, element counts, card/list/table form, every drawn button/map/form actually built. Style-only differences OK; structural differences are FAILS unless the user's request approved them in advance |
 
 **Protocol:** run P1–P15 → fix all HARD fails → re-run the ENTIRE matrix. Two consecutive
 all-green (or green + justified-UNVERIFIED) runs required. The filled matrix ships with the

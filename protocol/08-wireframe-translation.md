@@ -12,12 +12,24 @@ wireframe's boxes.
   gallery, CTA targets).
 - The **Designer Model governs**: everything visual — type, color, spacing, alignment,
   density, motion, and the archetype used to realize each region.
-- On conflict, taste wins over sketch geometry: if the wireframe draws a 4-column icon grid
-  but the designer "never explains with icons," you deliver the designer's version of that
-  intent and FLAG the deviation with the quoted rule. The wireframe author sketched intent,
-  not art direction — your job is intent, executed in the designer's hand.
-- Only the user's words outrank taste: if the request explicitly says "follow the wireframe
-  literally here," do so and note the taste tension in delivery notes.
+- **(v3.2 correction) The wireframe also governs each section's internal LAYOUT, literally:**
+  column splits, image placement and presence, element counts (6 cards means 6 cards), card
+  vs list, table vs line, buttons drawn means buttons built, a map drawn means a map
+  rendered. If the author drew it, they want to SEE it.
+- The Designer Model is STYLING ONLY: it skins the wireframe's skeleton (fonts, sizes,
+  colors, spacing, radii, hovers, motion) and fills gaps the sketch leaves open. **Taste may
+  propose, never override:** when a drawn layout collides with a Model rule ("never cards"),
+  build the wireframe's version styled as tastefully as the system allows, and offer the
+  designer's alternative in the delivery notes as an opt-in suggestion. Only the user's
+  explicit words in the request outrank the drawing.
+- Template mechanics that physically constrain section order (e.g. a scroll-choreographed
+  opening that cannot be reordered) must be surfaced as a named constraint BEFORE building —
+  never discovered by the user in the delivery.
+
+**The failure this correction replaces:** a field build where drawn cards became text lists,
+split layouts became centered stacks, and the map became a link — "in the designer's taste"
+but not what was drawn. That is re-skinning the designer's habits onto the user's plan, and
+it fails the wireframe author. Structure is the user's; skin is the designer's.
 
 ## Step 1 — Wireframe Read (written artifact, mandatory)
 
