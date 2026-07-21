@@ -73,6 +73,7 @@
 | P13 | Untouched-region stability | | |
 | P14 | Optical parity vs Reference Capture | | |
 | P15 | Weight & console vs baseline | | |
+| P16 | Wireframe conformance (if wireframe given) | | |
 
 **Verdict:** PASS / FAIL → [if fail: list fixes, then re-run full gate]
 **Consecutive clean passes:** [n]/2

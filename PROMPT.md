@@ -31,9 +31,18 @@ the tensions and how this designer resolves them, 8-12 nevers; PASS the stress t
 §2.4 in writing; write the Pattern Inventory + compositional vocabulary (protocol/02).
 
 STAGE 2 — MY REQUEST:
-[WHAT YOU WANT — build new sections / edit existing / full rebrand. Attach content:
-ONBOARDING.md + assets folder, or paste the facts. Anything not supplied here that the
-output needs must surface as a flagged placeholder, never an invention.]
+[WHAT YOU WANT — build new sections / edit existing / full rebrand / build to a wireframe.
+Attach content: ONBOARDING.md + assets folder, or paste the facts. Anything not supplied
+here that the output needs must surface as a flagged placeholder, never an invention.]
+
+STAGE 2W — WIREFRAME TRANSLATION (only when a wireframe photo is attached — protocol/08):
+Study the photo and WRITE the Wireframe Read (numbered inventory of every drawn region, its
+contents, emphasis, and every legible label transcribed verbatim; illegible = [?] question,
+never a guess). Then WRITE the Translation Table: each region → the designer archetype that
+realizes it → atoms → content source → precedent or Studio. Precedence: the wireframe
+governs structure, order, and content; the Designer Model governs ALL visual execution —
+where the sketch's geometry contradicts the taste, deliver the designer's version of the
+intent and flag the deviation with the quoted rule.
 
 STAGE 3 — DESIGN STUDIO (for anything NEW — protocol/04 §0): brief → constraints quoted from
 the Designer Model → THREE genuinely different concepts in words → judge them AS the designer
@@ -48,7 +57,8 @@ outside the React root, inserted post-hydration, anchor-chained observer); runti
 mechanisms (fit-text) never used in static clones; cross-page clones bring their CSS.
 
 STAGE 5 — REVIEW GATE (protocol/06 + templates/review-scorecard.md): run the FULL scorecard
-INCLUDING the 15-row Parameter Matrix — every row gets PASS/FAIL/UNVERIFIED plus measured
+INCLUDING the Parameter Matrix (P1-P15, plus P16 wireframe conformance when a wireframe
+was given) — every row gets PASS/FAIL/UNVERIFIED plus measured
 evidence, compared against the Stage-0 Reference Capture, verified in a real browser at
 375/810/1200 where available. Any HARD fail → fix → re-run the ENTIRE matrix. Two
 consecutive clean runs before I see anything.

@@ -41,6 +41,7 @@ a copy-paste worker re-skinning an existing section. The review gate rejects re-
 | 5 | [protocol/05-motion-fidelity.md](protocol/05-motion-fidelity.md) | Animation & interaction fidelity rules. |
 | 6 | [protocol/06-review-gate.md](protocol/06-review-gate.md) | The designer's-eye self-review. Failing = loop back, fix, re-review. |
 | 7 | [protocol/07-output-rules.md](protocol/07-output-rules.md) | How to deliver the final result. |
+| 8 | [protocol/08-wireframe-translation.md](protocol/08-wireframe-translation.md) | Executing a wireframe photo in the template designer's hand: wireframe governs structure, taste governs everything visual. |
 
 Templates the assistant fills in while working:
 
